@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Tungsten-Black';
+    src: local('Tungsten Black'), local('Tungsten-Black'),
+        url('../../../fonts/Tungsten-Black/Tungsten-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Tungsten-Bold';
+    src: local('Tungsten Bold'), local('Tungsten-Bold'),
+        url('../../../fonts/Tungsten-Bold/Tungsten-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Tungsten-Book';
+    src: local('Tungsten Book'), local('Tungsten-Book'),
+        url('../../../fonts/Tungsten-Book/Tungsten-Book.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Tungsten-Cond-Black';
+    src: local('Tungsten Condensed Black'), local('Tungsten-Condensed-Black'),
+        url('../../../fonts/TungstenCondensed-Black/TungstenCondensed-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Tungsten-Cond-Bold';
+    src: local('Tungsten Condensed Bold'), local('Tungsten-Condensed-Bold'),
+        url('../../../fonts/TungstenCondensed-Bold/TungstenCondensed-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Tungsten-Cond-Book';
+    src: local('Tungsten Condensed  Book'), local('Tungsten-Condensed--Book'),
+        url('../../../fonts/TungstenCondensed-Book/TungstenCondensed-Book.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
+$hook-book: 'Tungsten-Book';
+$hook-black: 'Tungsten-Black';
+$hook-bold: 'Tungsten-Book';
+$hook-alter-book: 'Tungsten-Cond-Book';
+$hook-alter-bold: 'Tungsten-Cond-Book';
+$hook-alter-black: 'Tungsten-Cond-Book';
+

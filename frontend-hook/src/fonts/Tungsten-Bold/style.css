@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Tungsten';
+    src: local('Tungsten Bold'), local('Tungsten-Bold'),
+        url('Tungsten-Bold.woff2') format('woff2'),
+        url('Tungsten-Bold.woff') format('woff'),
+        url('Tungsten-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }

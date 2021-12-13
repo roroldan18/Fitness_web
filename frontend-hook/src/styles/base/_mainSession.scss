@@ -1,0 +1,218 @@
+Table i{
+  margin-left: 1.5em;
+}
+
+Table {
+  width: 85vw !important;
+}
+
+th {
+  cursor:pointer;
+}
+
+.carousel img{
+    width: 300px;
+    object-fit: contain;
+    height:500px;
+  }
+
+.novedades{
+    padding: 30px;
+}
+
+.mixes-section {
+    margin: 20px 10px 20px 10px;   
+}
+
+
+
+Form {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+
+
+
+.headerSortDown:after,
+.headerSortUp:after {
+  content: ' ';
+  position: relative;
+  left: 2px;
+  border: 8px solid transparent;
+}
+
+.headerSortDown:after {
+  top: 0.6em;
+  border-top-color: silver;
+}
+
+.headerSortUp:after {
+  bottom: 0.5em;
+  border-bottom-color: silver;
+}
+
+.headerSortDown,
+.headerSortUp {
+  padding-right: 10px;
+}
+
+
+
+.selectorDeMixes {
+  max-width: 15em;
+  letter-spacing: 3px;
+}
+
+.videoButton {
+  letter-spacing: 1px !important;
+  font-size: medium !important;
+  color: $white !important;
+  background-color: $red;
+  &:hover {
+    background-color: darken($color: $red, $amount: 5) !important;
+  }
+}
+
+.formCard {
+  min-width: 400px !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between !important;
+}
+
+.auth__input{
+  border: 1px solid black;
+  padding: 2px;
+}
+
+select {
+  font-size: 25px;
+  option {
+  font-size: 20px;
+  }
+}
+
+@media (max-width: 415px) {
+
+  .largeFont {
+    font-size: 1rem !important;
+  }
+  .mediumFont {
+    font-size: 0.8rem !important;
+  }
+  .normalFont {
+    font-size: 0.5rem !important;
+  }
+  
+  .titleFont {
+    font-size: 1.5rem !important;
+  }
+  
+  .fontAwesomeButton {
+    color: white;
+    
+    &:hover {
+      opacity: 0.5 !important;
+    }
+  }
+
+  .videoButton {
+    letter-spacing: 0.5px !important;
+    margin: 0 !important;
+    font-size: small !important;
+    color: $white !important;
+    background-color: $red;
+  }
+
+  .videoButton {
+    letter-spacing: 0.5px !important;
+    height: 30px !important;
+    margin: 0 !important;
+    font-size: small !important;
+    color: $white !important;
+    background-color: $red;
+  }
+
+  .barraBusqueda {
+    font-size: 0.4em !important;
+    letter-spacing: 3px;
+    border-radius: 20px;
+  }
+  
+  .listadoInstructoresMix{
+    height: 30rem !important;
+  }
+}
+@media only screen and (min-width: 416px) and (max-width: 1030px){
+
+  .barraBusqueda {
+    font-size: 0.6em !important;
+    letter-spacing: 3px;
+    border-radius: 20px;
+  }
+
+  .largeFont {
+    font-size: 2rem !important;
+  }
+  .mediumFont {
+    font-size: 1.5rem !important;
+  }
+  .normalFont {
+    font-size: 1rem !important;
+  }
+  
+  .titleFont {
+    font-size: 3rem !important;
+  }
+  
+  .fontAwesomeButton {
+    color: white;
+    
+    &:hover {
+      opacity: 0.5 !important;
+    }
+  }
+  
+  .listadoInstructoresMix{
+    height: 30rem !important;
+  }
+}
+@media (min-width: 1030px){
+  
+  .largeFont {
+    font-size: 2rem !important;
+  }
+  .mediumFont {
+    font-size: 1.5rem !important;
+  }
+  .normalFont {
+    font-size: 1rem !important;
+  }
+  
+  .titleFont {
+    font-size: 3rem !important;
+  }
+  
+  .fontAwesomeButton {
+    color: white;
+    
+    &:hover {
+      opacity: 0.5 !important;
+    }
+  }
+  
+  .listadoInstructoresMix{
+    height: 30rem !important;
+  }
+
+
+.barraBusqueda {
+  font-size: 0.7em !important;
+  letter-spacing: 3px;
+  border-radius: 20px;
+}
+}

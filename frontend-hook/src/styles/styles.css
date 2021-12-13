@@ -1,0 +1,370 @@
+@font-face {
+  font-family: 'Tungsten-Black';
+  src: local("Tungsten Black"), local("Tungsten-Black"), url("../fonts/Tungsten-Black/Tungsten-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten-Bold';
+  src: local("Tungsten Bold"), local("Tungsten-Bold"), url("../fonts/Tungsten-Bold/Tungsten-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten-Book';
+  src: local("Tungsten Book"), local("Tungsten-Book"), url("../fonts/Tungsten-Book/Tungsten-Book.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten-Cond-Black';
+  src: local("Tungsten Condensed Black"), local("Tungsten-Condensed-Black"), url("../fonts/TungstenCondensed-Black/TungstenCondensed-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten-Cond-Bold';
+  src: local("Tungsten Condensed Bold"), local("Tungsten-Condensed-Bold"), url("../fonts/TungstenCondensed-Bold/TungstenCondensed-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tungsten-Cond-Book';
+  src: local("Tungsten Condensed  Book"), local("Tungsten-Condensed--Book"), url("../fonts/TungstenCondensed-Book/TungstenCondensed-Book.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 170px;
+  background: linear-gradient(270.32deg, #BEB7B1 -14.18%, rgba(255, 255, 255, 0) 64.48%), #130303;
+}
+
+header img {
+  max-height: 120px;
+}
+
+header h3 {
+  margin-right: 20px;
+}
+
+footer {
+  background-color: #000000;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 3px;
+  color: #FFFFFF;
+}
+
+footer a {
+  margin: 5px;
+  font-size: 1.5em;
+  color: #FFFFFF;
+}
+
+.footerContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footerContent h3 {
+  font-size: 0.9rem;
+}
+
+.footerContent h2 {
+  font-size: 3rem;
+}
+
+.navbar {
+  height: 60px;
+}
+
+.dropdown-menu {
+  left: -50px !important;
+}
+
+.shopCart {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 20px;
+  right: 10px;
+  top: 30px;
+}
+
+#dropdownMenuButton1 {
+  margin-right: 2rem;
+}
+
+.dropdown-menu li a {
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  font-family: Tungsten-Bold;
+  color: white;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+}
+
+.btn-danger {
+  font-size: 1.5rem;
+  font-family: Tungsten-bold;
+  letter-spacing: 5px;
+  color: white;
+}
+
+.invisible {
+  display: none;
+}
+
+.displayRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+Table i {
+  margin-left: 1.5em;
+}
+
+Table {
+  width: 85vw !important;
+}
+
+th {
+  cursor: pointer;
+}
+
+.carousel img {
+  width: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 500px;
+}
+
+.novedades {
+  padding: 30px;
+}
+
+.mixes-section {
+  margin: 20px 10px 20px 10px;
+}
+
+Form {
+  max-width: 500px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.buscarBoton {
+  width: 7em;
+  margin-left: 2em;
+}
+
+.barraBusqueda {
+  font-size: 0.7em !important;
+  letter-spacing: 3px;
+  border-radius: 20px;
+}
+
+.buscarBoton {
+  font-size: 1em !important;
+  padding: 0;
+  letter-spacing: 3px;
+}
+
+.headerSortDown:after,
+.headerSortUp:after {
+  content: ' ';
+  position: relative;
+  left: 2px;
+  border: 8px solid transparent;
+}
+
+.headerSortDown:after {
+  top: 0.6em;
+  border-top-color: silver;
+}
+
+.headerSortUp:after {
+  bottom: 0.5em;
+  border-bottom-color: silver;
+}
+
+.headerSortDown,
+.headerSortUp {
+  padding-right: 10px;
+}
+
+.selectorDeMixes {
+  max-width: 15em;
+  letter-spacing: 3px;
+}
+
+.videoButton {
+  letter-spacing: 1px !important;
+  font-size: medium !important;
+  color: #FFFFFF !important;
+  background-color: #BB0202;
+}
+
+.videoButton:hover {
+  background-color: #a20202 !important;
+}
+
+body {
+  font-family: "Tungsten-Book";
+  font-size: 30px;
+  color: #FFFFFF;
+}
+
+.navbar-brand {
+  color: #FFFFFF !important;
+}
+
+.navbar {
+  background-color: #BB0202 !important;
+  letter-spacing: 2px;
+}
+
+.shopCart {
+  color: #FFFFFF;
+  font-family: "Tungsten-Book";
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.shopCart i {
+  color: #000000;
+}
+
+.barraBusqueda {
+  border-color: #000000;
+}
+
+.buscarBoton {
+  color: #BB0202;
+  border-color: #BB0202;
+}
+
+.buscarBoton:hover {
+  color: #FFFFFF;
+  background-color: #BB0202;
+  border-color: #BB0202;
+}
+
+h2 {
+  letter-spacing: 4px;
+}
+
+Table i {
+  color: #FFFFFF;
+}
+
+Table {
+  color: #FFFFFF !important;
+}
+
+Table tr {
+  color: #FFFFFF !important;
+}
+
+Table thead th {
+  font-family: "Tungsten-Book";
+  letter-spacing: 4px;
+  font-size: 1.3em;
+}
+
+Table tbody th {
+  font-family: "Tungsten-Cond-Book";
+  letter-spacing: 3px;
+}
+
+#dropdownMenuButton1 {
+  letter-spacing: 5px;
+  font-size: 1.75rem;
+  font-family: "Tungsten-Book";
+  background-color: #BB0202;
+  border: 4px solid rgba(0, 0, 0, 0.3) !important;
+}
+
+.dropdown-menu {
+  background-color: #BB0202 !important;
+}
+
+footer a:hover {
+  color: #BB0202;
+}
+
+.card-body {
+  background-color: #DDDDDD;
+  color: #000000;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+}
+
+.spanInfo {
+  margin-right: 2em;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */
