@@ -115,7 +115,3 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-
-# Configuracion
-
-config.ts
