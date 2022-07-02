@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { AddUser } from './AddUser'
-import { GetUsers } from './GetUsers'
+import { AddUser } from './AddUser.js'
+import { GetUsers } from './GetUsers.js'
 
 export const AdminUser = () => {
 

@@ -1,5 +1,5 @@
-
-import { modifPath } from "../../funciones/modifPathDbox";
+import React from 'react';
+import { modifPath } from "../../funciones/modifPathDbox.js";
 import { scroller } from "react-scroll";
 
 

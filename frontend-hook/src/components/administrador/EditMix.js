@@ -2,9 +2,9 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { Button, Modal } from 'react-bootstrap';
 import Swal from 'sweetalert2';
-import { useForm } from '../../hooks/useForm';
-import { sortTable3 } from '../../funciones/sortTable3';
-import { uri } from '../../config';
+import { useForm } from '../../hooks/useForm.js';
+import { sortTable3 } from '../../funciones/sortTable3.js';
+import { uri } from '../../config.js';
 import { NavLink, useHistory } from 'react-router-dom';
 
 export const EditMix = (materialId) => {

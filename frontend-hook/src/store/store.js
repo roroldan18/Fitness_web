@@ -1,10 +1,10 @@
 import { createStore, combineReducers, compose, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 
-import { authReducer } from '../reducers/authReducer';
-import { idCursoReducer } from '../reducers/idCursoReducer';
-import { idInstructorReducer } from '../reducers/idInstructorReducer';
-import { uiReducer } from '../reducers/uiReducers';
+import { authReducer } from '../reducers/authReducer.js';
+import { idCursoReducer } from '../reducers/idCursoReducer.js';
+import { idInstructorReducer } from '../reducers/idInstructorReducer.js';
+import { uiReducer } from '../reducers/uiReducers.js';
 
 const composeEnhancers = (typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;
 

@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { Card } from 'react-bootstrap';
 import Swal from 'sweetalert2';
-import { useForm } from '../../hooks/useForm';
-import { provincias } from '../../database/provincias';
-import { localidades } from '../../database/localidades';
-import { titleCase } from '../../funciones/titleCase';
-import { countries } from '../../database/countries';
+import { useForm } from '../../hooks/useForm.js';
+import { provincias } from '../../database/provincias.js';
+import { localidades } from '../../database/localidades.js';
+import { titleCase } from '../../funciones/titleCase.js';
+import { countries } from '../../database/countries.js';
 import axios from 'axios';
-import { uri } from '../../config';
+import { uri } from '../../config.js';
 import { useDispatch, useSelector } from 'react-redux';
-import { startChecking } from '../../actions/auth';
+import { startChecking } from '../../actions/auth.js';
 
 export const PerfilInstructor =  () => {
     const { idUsuario ,usuario, correo } = useSelector(state => state.auth);

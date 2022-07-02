@@ -3,9 +3,9 @@ import { Button, Modal } from 'react-bootstrap';
 
 import axios from 'axios';
 import Swal from 'sweetalert2';
-import { uri } from '../../config';
+import { uri } from '../../config.js';
 
-import { useForm } from '../../hooks/useForm';
+import { useForm } from '../../hooks/useForm.js';
 
 
 export const AddSistema = () => {

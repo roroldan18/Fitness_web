@@ -2,8 +2,8 @@ import axios from 'axios';
 import React from 'react'
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
-import { uri } from '../../config';
-import { useForm } from '../../hooks/useForm';
+import { uri } from '../../config.js';
+import { useForm } from '../../hooks/useForm.js';
 
 export const ForgotPassword = () => {
 

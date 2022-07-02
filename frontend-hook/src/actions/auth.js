@@ -1,8 +1,8 @@
-import { types } from "../types/types";
-import { idInstructorAsignado } from "./idInstructor";
-import { finishLoading, startLoading } from "./ui";
+import { types } from "../types/types.js";
+import { idInstructorAsignado } from "./idInstructor.js";
+import { finishLoading, startLoading } from "./ui.js";
 
-import { uri } from "../config";
+import { uri } from "../config.js";
 
 import axios from "axios";
 import Swal from "sweetalert2";
@@ -87,30 +87,37 @@ export const logout = () => ({
 
 
 export const startChecking = () => {
+
+
     return async (dispatch) =>{
 
-        const res = await axios.get(`${uri}/jwt/`);
-        const body = await res.data;
-
-
-        if( body.ok && body.usuario.habilitado ){
-            const {username, id, id_perfil, correo, habilitado, cambiopass, acepto_terminos} = body.usuario;
-            dispatch( login( username, id, id_perfil, correo, habilitado, cambiopass, acepto_terminos) )
-
-            if(id_perfil === 5){
-                try{
-                    if( id !== undefined){
-                        const response = await axios.get(`${uri}/instructores/usuario/${id}`);
-                        const instructorSelected = response.data.data;
-                        dispatch ( idInstructorAsignado( instructorSelected ) );
+        try {
+            //Get the token if exist
+            const res = await axios.get(`${uri}/jwt/`);
+            const body = await res?.data;
+        
+            if( body.ok && body.usuario.habilitado ){
+                const {username, id, id_perfil, correo, habilitado, cambiopass, acepto_terminos} = body.usuario;
+                dispatch( login( username, id, id_perfil, correo, habilitado, cambiopass, acepto_terminos) )
+    
+                if(id_perfil === 5){
+                    try{
+                        if( id !== undefined){
+                            const response = await axios.get(`${uri}/instructores/usuario/${id}`);
+                            const instructorSelected = response.data.data;
+                            dispatch ( idInstructorAsignado( instructorSelected ) );
+                        }
+                    }
+                    catch(error){
+                        console.log('Hubo un error al obtener datos del instructor');
                     }
                 }
-                catch(error){
-                    console.log('Hubo un error al obtener datos del instructor');
-                }
             }
-        }
-        else{
+            else{
+                dispatch( checkingFinish() )
+            }
+            
+        } catch (error) {
             dispatch( checkingFinish() )
         }
 

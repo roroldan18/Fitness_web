@@ -1,11 +1,11 @@
 import axios from 'axios';
 import React, { useState } from 'react'
 import Swal from 'sweetalert2';
-import { useForm } from '../../hooks/useForm';
-import { sortTable2 } from '../../funciones/sortTable2';
+import { useForm } from '../../hooks/useForm.js';
+import { sortTable2 } from '../../funciones/sortTable2.js';
 import { NavLink } from 'react-router-dom';
 import { Button, Modal } from 'react-bootstrap';
-import { uri } from '../../config';
+import { uri } from '../../config.js';
 
 export const GetMix = () => {
 

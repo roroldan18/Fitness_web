@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { uri } from '../../config';
-import { CarouselNovedades } from './CarouselNovedades';
+import { uri } from '../../config.js';
+import { CarouselNovedades } from './CarouselNovedades.js';
 
 export const NovedadesInst = () => {
 

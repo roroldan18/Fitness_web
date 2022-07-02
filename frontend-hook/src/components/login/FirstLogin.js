@@ -1,9 +1,9 @@
 import React from 'react';
-import { useForm } from '../../hooks/useForm';
-import { Footer } from '../Footer';
+import { useForm } from '../../hooks/useForm.js';
+import { Footer } from '../Footer.js';
 import Swal from 'sweetalert2';
-import { HeaderInst } from '../instructor/HeaderInst';
-import { uri } from '../../config';
+import { HeaderInst } from '../instructor/HeaderInst.js';
+import { uri } from '../../config.js';
 import axios from 'axios';
 import { useSelector } from 'react-redux';
 

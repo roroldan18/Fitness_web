@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { Col, Form, FormControl } from 'react-bootstrap';
-import { uri } from '../../config';
+import { uri } from '../../config.js';
 import { useHistory } from "react-router-dom";
 import Swal from "sweetalert2";
 
@@ -149,7 +149,7 @@ export const InstructoresMix = (idMix) => {
           })
     }
 
-    instructoresAsignados?.sort(function (a, b) {
+    instructoresAsignados.sort(function (a, b) {
         if (a.instructor.nombre > b.instructor.nombre) {
           return 1;
         }
@@ -159,7 +159,7 @@ export const InstructoresMix = (idMix) => {
         return 0;
       });
 
-    instructoresNoAsignados?.sort(function (a, b) {
+    instructoresNoAsignados.sort(function (a, b) {
 
         if (a.instructor?.nombre > b.instructor?.nombre || a.nombre > b.nombre) {
             return 1;

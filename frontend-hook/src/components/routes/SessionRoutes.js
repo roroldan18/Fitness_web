@@ -1,25 +1,30 @@
 import React from 'react';
 import { Redirect, Route, Switch } from 'react-router'
-import { Footer } from '../Footer'
-import { HeaderInst } from '../instructor/HeaderInst'
-import { NavBarLog } from '../instructor/NavBarLog'
-import { NovedadesInst } from '../instructor/NovedadesInst'
-import { PerfilInstructor } from '../instructor/PerfilInstructor'
-import { SearchBar } from '../instructor/SearchBar'
-import { MixesInst } from '../instructor/MixesInst';
+import { Footer } from '../Footer.js'
+import { HeaderInst } from '../instructor/HeaderInst.js'
+import { NavBarLog } from '../instructor/NavBarLog.js'
+import { NovedadesInst } from '../instructor/NovedadesInst.js'
+import { PerfilInstructor } from '../instructor/PerfilInstructor.js'
+import { SearchBar } from '../instructor/SearchBar.js'
+import { MixesInst } from '../instructor/MixesInst.js';
 import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
-import { uri } from '../../config';
+import { uri } from '../../config.js';
 import Swal from 'sweetalert2';
-import { startChecking } from '../../actions/auth';
-import { TerminosCondiciones } from '../instructor/TerminosCondiciones';
+import { startChecking } from '../../actions/auth.js';
+import { TerminosCondiciones } from '../instructor/TerminosCondiciones.js';
 
 
 export const SessionRoutes = () => {
     
     const dispatch = useDispatch();
     const {id, nombre, apellido, telefono, direccion, pais, provincia, ciudad, fuerzaCompletaDatos} = useSelector(state => state.idInstructor);
+
+    //TO PROD
     const {acepto_terminos} = useSelector(state => state.auth);
+
+   // TO TEST PORTAL
+  /*  const acepto_terminos = true; */
 
 
     const handleConfirmar = () => { 

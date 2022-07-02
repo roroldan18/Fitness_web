@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import { logout } from '../../actions/auth';
+import { logout } from '../../actions/auth.js';
 
 
 export const NavBarLogAdmin = () => {

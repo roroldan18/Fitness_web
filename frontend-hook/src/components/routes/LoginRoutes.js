@@ -1,9 +1,9 @@
 import React from 'react'
 import { Redirect, Route, Switch } from 'react-router'
-import { Footer } from '../Footer'
-import { HeaderInst } from '../instructor/HeaderInst'
-import { LoginScreen } from '../login/LoginScreen'
-import { ForgotPassword } from '../login/ForgotPassword'
+import { Footer } from '../Footer.js'
+import { HeaderInst } from '../instructor/HeaderInst.js'
+import { LoginScreen } from '../login/LoginScreen.js'
+import { ForgotPassword } from '../login/ForgotPassword.js'
 
 export const LoginRoutes = () => {
     return (

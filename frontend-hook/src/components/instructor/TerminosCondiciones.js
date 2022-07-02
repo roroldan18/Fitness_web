@@ -2,8 +2,8 @@ import axios from 'axios';
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import Swal from 'sweetalert2';
-import { startChecking } from '../../actions/auth';
-import { textTermsAndCond, uri } from '../../config';
+import { startChecking } from '../../actions/auth.js';
+import { textTermsAndCond, uri } from '../../config.js';
 
 
 

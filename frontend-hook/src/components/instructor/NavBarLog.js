@@ -2,10 +2,10 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import { startLogout } from '../../actions/auth';
-import { cursoElegido, noCurso } from '../../actions/idCurso';
-import { eliminarIdInstructorAsignado } from '../../actions/idInstructor';
-import { uri } from '../../config';
+import { startLogout } from '../../actions/auth.js';
+import { cursoElegido, noCurso } from '../../actions/idCurso.js';
+import { eliminarIdInstructorAsignado } from '../../actions/idInstructor.js';
+import { uri } from '../../config.js';
 
 export const NavBarLog = () => {
     const dispatch = useDispatch()

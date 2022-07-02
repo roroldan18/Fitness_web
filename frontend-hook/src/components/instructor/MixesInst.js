@@ -2,10 +2,10 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
-import { uri } from '../../config';
-import { sortTable } from '../../funciones/sortTable';
-import { MixesList } from './MixesList';
-import { TrackVideo } from './TrackVideo';
+import { uri } from '../../config.js';
+import { sortTable } from '../../funciones/sortTable.js';
+import { MixesList } from './MixesList.js';
+import { TrackVideo } from './TrackVideo.js';
 
 export const MixesInst = () => {
 

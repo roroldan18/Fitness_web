@@ -1,4 +1,4 @@
-import { GetMix } from "./GetMix";
+import { GetMix } from "./GetMix.js";
 
 
 export const AdminMateriales = () => {

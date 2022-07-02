@@ -2,8 +2,8 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Button, Modal } from 'react-bootstrap'
 import Swal from 'sweetalert2'
-import { perfil, uri } from '../../config'
-import { useForm } from '../../hooks/useForm'
+import { perfil, uri } from '../../config.js'
+import { useForm } from '../../hooks/useForm.js'
 
 export const InfoPersonal = ({idUsuario}) => {
 

@@ -1,16 +1,16 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Form, FormControl, Table } from 'react-bootstrap';
 import { useLocation } from 'react-router-dom';
-import queryString from 'query-string';
-import { useForm } from '../../hooks/useForm';
-import { getTrackByName } from '../../funciones/getTrackByName';
-import { MixesList } from './MixesList';
-import { getTrackByStyle } from '../../funciones/getTrackByStyle';
-import { sortTable } from '../../funciones/sortTable';
-import { TrackVideo } from './TrackVideo';
+import { useForm } from '../../hooks/useForm.js';
+import { getTrackByName } from '../../funciones/getTrackByName.js';
+import { MixesList } from './MixesList.js';
+import { getTrackByStyle } from '../../funciones/getTrackByStyle.js';
+import { sortTable } from '../../funciones/sortTable.js';
+import { TrackVideo } from './TrackVideo.js';
 import axios from 'axios';
-import { uri } from '../../config';
+import { uri } from '../../config.js';
 import { useSelector } from 'react-redux';
+import queryString from 'query-string';
 
 export const SearchBar = ( {history} ) => {
 

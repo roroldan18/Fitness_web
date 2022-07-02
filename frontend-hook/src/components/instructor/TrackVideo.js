@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
-import { modifPath } from '../../funciones/modifPathDbox';
+import { modifPath } from '../../funciones/modifPathDbox.js';
 
 export const TrackVideo = ( {video} ) => {
 

@@ -5,22 +5,27 @@ import {
     Redirect,
     Switch
   } from "react-router-dom";
-import { LoginRoutes } from '../routes/LoginRoutes';
-import { PublicRoute } from './PublicRoutes';
-import { PrivateRoute } from './PrivateRoutes';
-import { RedirectAdminUser } from './RedirectAdminUser';
-import { startChecking } from '../../actions/auth';
+import { LoginRoutes } from '../routes/LoginRoutes.js';
+import { PublicRoute } from './PublicRoutes.js';
+import { PrivateRoute } from './PrivateRoutes.js';
+import { RedirectAdminUser } from './RedirectAdminUser.js';
+import { startChecking } from '../../actions/auth.js';
 
 
 export const RouterApp = () => {
 
+    // TO PROD
     const {idUsuario} = useSelector(state => state.auth);
 
+    // TO TEST THE PORTAL
+    /* const idUsuario = 1; */
+
+
     const dispatch = useDispatch();
-    
     useEffect(() => {
         dispatch( startChecking() );
-    }, [dispatch]);
+    }, []);
+
 
 
     return (

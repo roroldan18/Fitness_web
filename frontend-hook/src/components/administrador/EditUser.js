@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { CursosInstructorTomados } from './CursosInstructorTomados';
-import { InfoPersonal } from './InfoPersonal';
-import { MaterialUsuarioAsignado } from './MaterialUsuarioAsignado';
+import { CursosInstructorTomados } from './CursosInstructorTomados.js';
+import { InfoPersonal } from './InfoPersonal.js';
+import { MaterialUsuarioAsignado } from './MaterialUsuarioAsignado.js';
 
 export const EditUser = (idUser) => {
 

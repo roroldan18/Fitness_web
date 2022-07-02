@@ -1,10 +1,10 @@
 import React from 'react';
 import { FormControl } from 'react-bootstrap';
-import { useForm } from '../../hooks/useForm';
+import { useForm } from '../../hooks/useForm.js';
 import axios from 'axios';
 import { useState } from 'react';
 import Swal from 'sweetalert2';
-import { perfil, uri } from '../../config';
+import { perfil, uri } from '../../config.js';
 import { NavLink } from 'react-router-dom';
 
 

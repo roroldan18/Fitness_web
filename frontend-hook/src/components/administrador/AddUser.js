@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { useForm } from '../../hooks/useForm';
+import { useForm } from '../../hooks/useForm.js';
 import Swal from 'sweetalert2';
-import { countries } from '../../database/countries';
+import { countries } from '../../database/countries.js';
 import axios from 'axios';
-import { uri } from '../../config';
+import { uri } from '../../config.js';
 
 
 export const AddUser = () => {
